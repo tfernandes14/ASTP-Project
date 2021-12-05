@@ -1,0 +1,77 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+\begin{document}
+
+\title{Netflix Stock Market Forecasting\\
+}
+
+\author{\IEEEauthorblockN{Leonor Coelho}
+\IEEEauthorblockA{\textit{Master's in Data Science and Engineering} \\
+\textit{University of Coimbra}\\
+Coimbra, Portugal \\
+mariacoelho@student.dei.uc.pt}
+\and
+\IEEEauthorblockN{Tiago Fernandes}
+\IEEEauthorblockA{\textit{Master's in Data Science and Engineering} \\
+\textit{University of Coimbra}\\
+Coimbra, Portugal \\
+tfernandes@student.dei.uc.pt}
+}
+
+\maketitle
+
+\begin{abstract}
+\end{abstract}
+
+\begin{IEEEkeywords}
+
+\end{IEEEkeywords}
+
+\section{Introduction}
+
+The stock price of a company is a value that changes easily: if there are a lot of buyers, the price increases; on the other hand, when the number of investors increases, the stock price decreases.
+
+The stock market price is a time series since it is a set of sequential observations through time. People that invest in the market should be able to decide where to invest their money so they can make a bigger profit\cite{r1}. The analysis and forecasting of this time series can help in this decision: forecasting the stock price can help to predict if it will increase or decrease and investors can decide if they should buy or sell their shares.
+
+Netflix is a payed streaming platform, although they first sold DVD's, and has already 214 million subscribers all over the world. In 2002 they became a public company and their first profit was in 2003. Since then, Netflix entered Fortune 500 rank and is ranked 164th.
+
+Forecasting stock market returns is difficult because of market volatility. Recent advances offer useful tools in forecasting noisy environments like stock markets, taking into account their nonlinear behaviour.
+
+This paper is structured as follows: first, we present a literature review about this topic in section \ref{literaturereview}; then, in section \ref{methods} we explain our approach and which dataset and tools we used; the results and their discussion are presented in section \ref{resultsdiscussion}; in section \ref{conclusion} we show our conclusions.
+
+\section{Literature Review}
+\label{literaturereview}
+
+This paper \cite{george2009} summarizes over 100 articles that try to forecast stock market prices using soft computing. The authors reviewed those papers and summarized which methods their authors used and which data they inputed. The most common approaches to forecast were Artificial Neural Networks, linear and multi-linear regression, ARMA and ARIMA, Genetic Algorithms, and others. Some of the authors used specific techniques to choose which variables should be inputed, like stock index opening or closing, that are the most common, daily minimum or maximum price, transactions volumes, combination of opening and colsing price of previous days, and others. In this paper, more about 60\% of the surveyed articles use feed forward neural networks (FFNN) and recurrent networks. The authors concluded that neural networks and neuro fuzzy models are suitable for stock market forecasting.
+
+\section{Materials and Methods}
+\label{methods}
+
+The main goal of this paper is to characterize and forecast a stock market time series. In order to achieve this goal, we used a dataset from Kaggle with Netflix's stock market information since 2010.
+
+
+
+
+\section{Results and Discussion}
+\label{resultsdiscussion}
+
+\section{Conclusion}
+\label{conclusion}
+
+\begin{thebibliography}{00}
+\bibitem{r1} Ananthi, M., Vijayakumar, K. ``Stock market analysis using candlestick regression and market trend prediction (CKRM)''. J Ambient Intell Human Comput 12, 4819–4826 (2021)
+
+\bibitem{george2009} George S. Atsalakis, Kimon P. Valavanis, Surveying stock market forecasting techniques – Part II: Soft computing methods, Expert Systems with Applications, Volume 36, Issue 3, Part 2, 2009, Pages 5932-5941
+
+\end{thebibliography}
+
+\end{document}
